@@ -1,0 +1,134 @@
+
+html {
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.storytell
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.storytell video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+opacity: 0.8;
+}
+
+.story1 {
+  position:fixed;
+  top: 32%;
+  left: 75%;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.192);
+}
+
+.story1 h2 {
+  font-family: HeadlineFont;
+  color: white;
+  font-size: 6rem;
+}
+
+
+.newStyle {
+  font-family: HeadlineFont;
+  color: white;
+  font-size: 6rem;
+}
+
+.myButton{
+  display: none;
+}
+
+.newStyleText {
+  color: white;
+  font-family: text;
+font-size: 2.15rem;
+max-width: 600px;
+text-align: left;
+}
+
+
+.story1 p{
+  color: white;
+  font-family: text;
+font-size: 2rem;
+max-width: 600px;
+text-align: left;
+}
+
+.after{
+  position: fixed;
+top: 42%;
+left: 81%;
+  background:url(./img/startstopblacksized.png) no-repeat;
+  cursor:pointer;
+  border:none;
+  width: 200px;
+  height:200px;
+}
+
+.after:active  /* use Dot here */
+{   
+  background:url(./img/startstopsizedpressed.png) no-repeat;
+}
+
+.after:hover  /* use Dot here */
+{   
+  background:url(./img/startstopsized.png) no-repeat;
+}
+
+.nextButton {
+  font-family: HeadlineFont;
+margin-top: 2rem;
+  padding: 2rem 4rem;
+background: rgba(75, 22, 22, 0.699);
+border: none;
+color: white;
+cursor: pointer;
+border-radius: 10%;
+}
+
+.nextButton:hover{
+  background: rgba(136, 28, 28, 0.788);
+
+}
+
+
+@font-face {
+  font-family: HeadlineFont;
+  src: url(ethnocentric2.ttf);
+}
+
+@font-face {
+  font-family: text;
+  src: url(trb.otf);
+}

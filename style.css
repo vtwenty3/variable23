@@ -1,0 +1,304 @@
+html {
+  font-size: 62.5%;
+}
+
+
+@font-face {
+  font-family: HeadlineFont;
+  src: url(ethnocentric2.ttf);
+}
+
+@font-face {
+  font-family: text;
+  src: url(trb.otf);
+}
+
+
+
+body {
+  background-color:rgb(20, 20, 20);
+}
+
+h1
+{
+  text-align: center;
+    font-size: 3.6rem;
+    font-family: HeadlineFont;
+    font-weight:500;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  top: 50%;
+  left: 50%;
+
+}
+
+p{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.699);
+text-indent: 50px;
+letter-spacing: 0.4px;
+font-size: 2.5rem;
+font-family: text;
+padding: 0px 10vw 0px 10vw;
+
+
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}
+/*
+Make it like start engine button and when pressed to do a sound
+*/
+.parallax-landing {
+  width: 100%;
+  height: 45vw;
+   background-image: url(img/oldp2.jpg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-attachment: fixed;
+  background-size:contain;
+  background-color: #1d3557;
+}
+
+.parallax-1 {
+  /* The image used */
+  background-image: url(img/benznord2.png);
+
+  /* Full height */
+  height: 35vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+
+  /* The image used */
+  background-image: url(img/lambo.jpg);
+
+  /* Full height */
+  height: 25vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3 {
+
+  /* The image used */
+  background-image: url(img/drift.png);
+
+  /* Full height */
+  height: 30vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+
+
+.parallax-4 {
+
+  /* The image used */
+  background-image: url(img/experiment.png);
+
+  /* Full height */
+  height: 35vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+
+
+
+.parallax-5 {
+
+  /* The image used */
+  background-image: url(img/skylineee.png);
+
+  /* Full height */
+  height: 35vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+
+button{
+  margin: 20rem;
+  padding: 2rem 4rem;
+  background-color: none;
+  border: 0.3rem solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: red;
+  font-size: 2.4rem;
+  border-radius: 50%;
+height: 20rem;
+width: 20rem;
+}
+
+button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+html,
+body
+{
+  margin:0;
+  height: 200%;
+}
+
+.menu
+{
+  background: royalblue;
+  width: 100;
+}
+
+
+#navbar {
+  width:546px;
+
+margin:0 auto;
+  font-family: HeadlineFont;
+  overflow: hidden;
+  background-color: rgba(145, 47, 47, 0.856);
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width:150px;
+}
+
+/* Hover color change */
+#navbar a:hover {
+  background-color: tomato;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: violet;
+  color: white;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
+div[class*=box] {
+	height: 250px;
+	width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-2 { background-color: #0e0e0e; }
+.btn {
+	line-height: 120px;
+	height: 120px;
+	text-align: center;
+	width: 350px;
+	cursor: pointer;
+  font-size: 3rem;
+  font-family: headlinefont;  letter-spacing: 5px;
+}
+.btn-two {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+  color: white;
+
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(139, 0, 0, 0.1);
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(102, 111, 148, 0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: #da233b71
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: #da233b69
+}
+
+.footer {
+	text-align: center;
+	font-size: 0.7em;
+	margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*<a target="_blank" href="https://github.com/vtwenty3"> <img src="img/iconmonstr-github-1.svg"> </a>
